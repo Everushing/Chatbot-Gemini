@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +17,237 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* styles/SideNav.css */
+.sidenav {
+  width: 200px; /* Adjust width as needed */
+  background-color: #f0f0f0;
+  height: 100%; /* Make it full height of the container */
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding-top: 20px; /* Space from top */
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav li {
+  padding: 10px;
+}
+
+.sidenav li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.sidenav li a:hover {
+  background-color: #ddd;
+}
+
+
+
+.signup-form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* App.css or any other global CSS file */
+
+.login-form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* src/components/ChatBot.css */
+
+/* Container styles */
+.ChatBotContainer {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.ChatBotHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Chat history container styles */
+.ChatHistoryContainer {
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+/* Individual chat message styles */
+.ChatMessage {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.UserMessage {
+  background-color: #e6f2ff; /* Light blue for user messages */
+  text-align: right;
+}
+
+.BotMessage {
+  background-color: #f0f0f0; /* Light grey for bot messages */
+  text-align: left;
+}
+
+.BotMessage img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Input and button container styles */
+.InputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Input field styles */
+.InputField {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Send button styles */
+.SendButton {
+  margin-left: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.SendButton:hover {
+  background-color: #0056b3;
+}
+
+/* Bot response container styles */
+.BotResponseContainer {
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* UserProfile container styles */
+.UserProfileContainer {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Language selection styles */
+.LanguageSelectionContainer {
+  margin-top: 20px;
+}
+
+.LanguageButton {
+  margin-right: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.LanguageButton:hover {
+  background-color: #0056b3;
 }
