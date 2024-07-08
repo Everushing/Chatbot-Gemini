@@ -44,3 +44,92 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Overview
+Our ChatBot frontend is built using React, a popular JavaScript library for building user interfaces. It communicates with a backend service (not included in this repository) to provide chat functionality using Google's Generative AI API.
+
+Features
+Real-time Chat: Engage in real-time conversations with the ChatBot.
+Multilingual Support: Switch between languages using the language selection feature.
+User Profiles: View user profile information based on preferences.
+Error Handling: Handles network errors and API errors gracefully.
+Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+Make sure you have the following installed on your development machine:
+
+Node.js and npm (or yarn)
+Git
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone <repository-url>
+cd chatbot-frontend
+Install dependencies:
+
+bash
+Copy code
+npm install
+# or
+yarn install
+Usage
+To start the development server and view the application in your browser:
+
+bash
+Copy code
+npm start
+# or
+yarn start
+The application will be running at http://localhost:3000 by default.
+
+Project Structure
+The project structure is organized as follows:
+
+java
+Copy code
+chatbot-frontend/
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── ChatBot.tsx
+│   │   ├── LoginForm.tsx
+│   │   └── ...
+│   ├── types/
+│   │   └── index.ts
+│   ├── i18n/
+│   │   └── index.ts
+│   ├── mockData/
+│   │   └── mockUserProfile.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── setupTests.ts
+│   └── ...
+│
+├── .env.local
+├── package.json
+├── README.md
+└── ...
+Contributing
+We welcome contributions to improve our ChatBot frontend. To contribute:
+
+Fork the repository.
+Create your feature branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -am 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Create a new Pull Request.
+License
+This project is licensed under the MIT License.
+
+Author
+This ChatBot frontend was created by Evette Rushing.
+
+
+
